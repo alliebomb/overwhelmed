@@ -96,7 +96,7 @@ Stretch     ~ -1201px (see last slide in the .pdf for UI)
 /* line 42, ../sass/main.scss */
 body {
   width: 100%;
-  /*background: $cream;*/
+  background: #eff0d1;
   font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
 }
 
