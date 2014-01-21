@@ -1,0 +1,324 @@
+@import "compass/css3";
+@import "compass/reset";
+
+$orange:     #ee5025;
+$darkgray:   #282a24;
+$lightgray:  #32342D;
+$cream:      #EFF0D1;
+
+
+/* BASE STYLES */
+
+/* COLORS 
+-----------
+
+Orange:     #ee5025
+Dark Gray:  #282a24
+Light Gray: #32342D
+Cream:      #EFF0D1
+
+BREAKPOINTS
+-----------
+
+Mobile      460px and below
+Tablet      1024–461px
+Desktop     1200–1025px
+Stretch     ~ -1201px (see last slide in the .pdf for UI)
+
+*/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham/Gotham-Medium.otf');
+    src: local('Gotham'), local('Gotham'), url('../fonts/Gotham/Gotham-Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham/Gotham-Black.otf');
+    src: local('Gotham'), local('Gotham'), url('../fonts/Gotham/Gotham-Black.otf') format('truetype');
+}
+
+body {
+    width: 100%;
+    /*background: $cream;*/
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+
+}
+
+* {
+    vertical-align: top;
+}
+
+/*h1 {
+    font-family: "Memphis", serif;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ee5025;
+    font-family: "Memphis", serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+h3 { 
+    color: #282a24;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 7px;
+}*/
+
+/*p {
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+}*/
+
+a {
+    text-decoration: none;
+}
+
+/*a {
+    background: #282a24;
+    border: 5px solid #ee5025;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 30px;
+    padding: 10px 20px;
+}*/
+
+
+
+/*@media (max-width: 460px)*/
+
+.temp {
+/*    width: 320px;
+    min-height: 440px;
+    margin: 50px auto 0;
+    background: $cream;*/
+}
+
+/* header begin */
+
+header {
+    height: 40px;
+    background: $orange;
+    position: relative;
+
+    h2 {
+        font-size: 24px;
+        display: inline-block;
+        line-height: 43px;
+        margin-left: 10px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: "Memphis", serif;
+    }
+
+    .hamburger, .hamburger-x {
+        width: 40px;
+        height: inherit;
+        background: $darkgray;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+
+        .meat {
+            height: 3px;
+            margin: 8px auto 0;
+            background: rgb(255, 255, 255);
+            width: 55%;
+        }
+    }
+
+    .hamburger-x {
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+        font-weight: 100;
+        text-align: center;
+        line-height: 45px;
+    }
+}
+
+/* header end */
+
+/* footer begin */
+
+footer {
+    background: $lightgray;
+
+    .footer-separator {
+        height: 10px;
+        background: #FFF;
+    }
+
+    .inner-wrapper {
+        width: 260px;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .random-white-block {
+        width: 30px;
+        height: 45px;
+        margin-bottom: 20px;
+        background: #FFF;
+        display: inline-block;
+    }
+
+    .copyright, .book-suggestion-text {
+        color: #FFF;
+        margin: 10px;
+        font-size: 10px;
+        line-height: 14px;
+        display: inline-block;
+    }
+
+    .book-suggestion {
+        height: 110px;
+        padding-top: 10px;
+        background: $darkgray;
+
+        .book-suggestion-image {
+            width: 70px;
+            height: 100px;
+            margin: 0 10px;
+            background: #FFF;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .book-suggestion-text {
+            margin: 0;
+            margin-top: 10px;
+            margin-left: -5px;
+            width: 127px;
+
+            .unleash-link {
+                color: $orange;
+                display: inline;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+/* footer end*/
+
+/* for the individual orange-outlined links */
+
+.stangard-block-orange-outline {
+    background: $darkgray;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* bottom padding for main sections*/
+
+.padding-bottom {
+    padding-bottom: 32px;
+}
+
+/* set wrappers */
+
+.inner-wrapper {
+    width: 260px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+/* end wrappers */
+
+/* typography */
+
+p.standard-copy {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+.orange-outline {
+    color: $orange;
+    padding: 8px 20px;
+    border: 2px solid $orange;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #FFF;
+        background: #ee5025;
+    }
+}
+
+/* special heading <h1> */
+
+.special-heading {
+    background: $cream;
+    text-align: center;
+
+    h5 {
+        color: $darkgray;
+        padding-top: 25px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: "Gotham-Black", "Proxima Nova", Helvetica, sans-serif;
+    }
+
+    h1 {
+        color: $orange;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 36px;
+        letter-spacing: 1px;
+        font-size: 24px;
+        font-family: "Memphis", serif;
+    }
+}
+
+/* end special heading <h1> */
+
+/* section heading <h3> */
+
+h3 {
+    color: #FFF;
+    padding: 25px 0 18px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Memphis", serif;
+}
+
+/* end section heading <h3> */
+
+/* end typography */
+
+
+
+
+
+
+
+
+
+
+
+

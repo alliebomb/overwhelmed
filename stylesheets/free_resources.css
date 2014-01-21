@@ -1,0 +1,33 @@
+/* line 8, ../sass/free_resources.scss */
+.wrapper .get-free-resources {
+  background: #eff0d1;
+}
+/* line 12, ../sass/free_resources.scss */
+.wrapper .resources {
+  padding-top: 30px;
+  background: #ee5025;
+}
+/* line 16, ../sass/free_resources.scss */
+.wrapper .resources .resource {
+  margin-bottom: 30px;
+}
+/* line 19, ../sass/free_resources.scss */
+.wrapper .resources .resource:last-child {
+  margin-bottom: 0;
+}
+/* line 24, ../sass/free_resources.scss */
+.wrapper .resources .resource-image {
+  height: 60px;
+  width: 60px;
+  margin-right: 14px;
+  display: inline-block;
+  background: #FFF;
+  text-align: center;
+  line-height: 55px;
+}
+/* line 34, ../sass/free_resources.scss */
+.wrapper .resources .resource-copy {
+  width: 180px;
+  margin-top: -3px;
+  display: inline-block;
+}

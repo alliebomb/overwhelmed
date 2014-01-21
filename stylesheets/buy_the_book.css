@@ -1,0 +1,13 @@
+/* line 8, ../sass/buy_the_book.scss */
+.wrapper .buy-the-book {
+  background: #eff0d1;
+}
+/* line 12, ../sass/buy_the_book.scss */
+.wrapper .buy-book-options {
+  width: 240px;
+  height: 310px;
+  margin: 0 auto;
+  background: #FFF;
+  text-align: center;
+  line-height: 310px;
+}

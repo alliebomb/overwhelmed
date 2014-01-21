@@ -1,0 +1,186 @@
+/* line 6, ../sass/home.scss */
+.wrapper {
+  /* set references */
+  /* end references */
+}
+/* line 8, ../sass/home.scss */
+.wrapper .main-image {
+  height: 140px;
+  text-align: center;
+  line-height: 140px;
+  background: #FFF;
+}
+/* line 15, ../sass/home.scss */
+.wrapper .arrow-up {
+  margin: -10px auto 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid black;
+}
+/* line 24, ../sass/home.scss */
+.wrapper .slides-wrapper, .wrapper .shares-wrapper {
+  width: 320px;
+  height: inherit;
+  margin: 0 auto;
+}
+/* line 30, ../sass/home.scss */
+.wrapper .slides {
+  height: 30px;
+  background: #282a24;
+  text-align: center;
+}
+/* line 35, ../sass/home.scss */
+.wrapper .slides .slide {
+  color: #eff0d1;
+  margin: 0px 25px;
+  line-height: 36px;
+  font-size: 14px;
+  display: inline-block;
+}
+/* line 44, ../sass/home.scss */
+.wrapper .shares-wrapper {
+  text-align: center;
+}
+/* line 48, ../sass/home.scss */
+.wrapper .shares {
+  height: 90px;
+  background: #eff0d1;
+}
+/* line 52, ../sass/home.scss */
+.wrapper .shares .share {
+  color: #FFF;
+  width: 80px;
+  height: 50px;
+  margin: 20px 8px;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  background: #ee5025;
+  text-transform: uppercase;
+}
+/* line 66, ../sass/home.scss */
+.wrapper .about-the-book {
+  background: #282a24;
+  text-align: center;
+}
+/* line 70, ../sass/home.scss */
+.wrapper .about-the-book h3 {
+  padding-bottom: 30px;
+}
+/* line 74, ../sass/home.scss */
+.wrapper .about-the-book .book-image {
+  width: 80px;
+  height: 140px;
+  margin-bottom: 30px;
+  background: #ee5025;
+  display: inline-block;
+  text-align: center;
+  line-height: 140px;
+}
+/* line 84, ../sass/home.scss */
+.wrapper .about-the-book .book-description {
+  color: #eff0d1;
+  width: 140px;
+  height: 140px;
+  margin-left: 30px;
+  margin-top: 5px;
+  text-align: left;
+  display: inline-block;
+}
+/* line 97, ../sass/home.scss */
+.wrapper .youtube-reference, .wrapper .instagram-reference, .wrapper .contact-wrapper {
+  display: block;
+  text-align: center;
+}
+/* line 101, ../sass/home.scss */
+.wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
+  color: #eff0d1;
+  font-size: 10px;
+  line-height: 12px;
+  display: inline-block;
+}
+/* line 111, ../sass/home.scss */
+.wrapper .twitter {
+  background: #ee5025;
+}
+/* line 114, ../sass/home.scss */
+.wrapper .twitter .tweet {
+  font-size: 11px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+/* line 120, ../sass/home.scss */
+.wrapper .twitter .handle, .wrapper .twitter .time-stamp {
+  color: #eff0d1;
+  font-size: 10px;
+  display: inline-block;
+}
+/* line 126, ../sass/home.scss */
+.wrapper .twitter .time-stamp {
+  margin-bottom: 15px;
+}
+/* line 129, ../sass/home.scss */
+.wrapper .twitter .time-stamp:last-child {
+  margin-bottom: 0;
+}
+/* line 135, ../sass/home.scss */
+.wrapper .instagram {
+  background: #282a24;
+}
+/* line 138, ../sass/home.scss */
+.wrapper .instagram .instagram-image {
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 14px;
+  background: #FFF;
+  text-align: center;
+  line-height: 240px;
+}
+/* line 149, ../sass/home.scss */
+.wrapper .youtube {
+  background: #ee5025;
+}
+/* line 152, ../sass/home.scss */
+.wrapper .youtube .youtube-video {
+  width: 240px;
+  height: 140px;
+  margin: 0 auto 14px;
+  background: #FFF;
+  text-align: center;
+  line-height: 140px;
+}
+/* line 162, ../sass/home.scss */
+.wrapper .contact {
+  background: #282a24;
+}
+/* line 165, ../sass/home.scss */
+.wrapper .contact .contact-section {
+  margin-bottom: 10px;
+}
+/* line 168, ../sass/home.scss */
+.wrapper .contact .contact-section:last-child {
+  margin-bottom: 0;
+}
+/* line 173, ../sass/home.scss */
+.wrapper .contact .contact-section-header, .wrapper .contact .contact-snippet {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+/* line 185, ../sass/home.scss */
+.wrapper .contact .contact-section-header {
+  color: #ee5025;
+}
+/* line 189, ../sass/home.scss */
+.wrapper .contact .contact-snippet {
+  color: #eff0d1;
+}
