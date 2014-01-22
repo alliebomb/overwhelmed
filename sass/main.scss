@@ -175,6 +175,10 @@ header {
             line-height: 53px;
             margin-left: 20px;
         }
+
+        a {
+            color: #000;
+        }
     }
 
     .hamburger, .hamburger-x {
@@ -305,6 +309,11 @@ header {
             font-size: 16px;
             line-height: 20px;
         }
+
+        @media (min-width : 1025px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 
     .contact-section-header {
@@ -359,6 +368,10 @@ footer {
             display: inline-block;
             vertical-align: top;
             margin-right: 55px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 
@@ -522,6 +535,10 @@ footer {
     @media (min-width : 768px) and (max-width : 1024px) {
         padding: 30px 0;
     }
+
+    @media (min-width : 1025px) {
+        padding: 35px 0;
+    }
 }
 
 /* bottom padding for main sections*/
@@ -546,9 +563,19 @@ footer {
     margin: 0 auto;
     margin: 0 auto;
 
-    @media (min-width : 1201px) {
+    // @media (min-width : 1201px) {
+    //     width: 1200px;
+    //     // border: 3px solid blue;   
+    // }
+    @media (min-width : 1025px) {
         width: 1200px;
-        // border: 3px solid blue;   
+    }
+}
+
+.desktop-wrapper {
+    @media (min-width : 1025px) {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -571,8 +598,8 @@ p.standard-copy {
     }
 
     @media (min-width : 1025px) {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 30px;
     }
 }
 
@@ -655,6 +682,12 @@ p.standard-copy {
             letter-spacing: 6px;
             font-size: 14px;
         }
+
+        @media (min-width : 1025px) {
+            padding-top: 45px;
+            letter-spacing: 8px;
+            font-size: 18px;
+        }
     }
 
     h1 {
@@ -677,6 +710,12 @@ p.standard-copy {
             padding-bottom: 25px;
             line-height: 44px;
             font-size: 34px;
+        }
+
+        @media (min-width : 1025px) {
+            padding-bottom: 30px;
+            line-height: 60px;
+            font-size: 44px;
         }
     }
 }
@@ -706,8 +745,11 @@ h3 {
     }
 
     @media (min-width : 1025px) {
-        padding: 55px 0 36px;
-        font-size: 38px;
+        // padding: 55px 0 36px;
+        // font-size: 38px;
+        padding: 55px 0 20px;
+        // font-size: 38px;
+        font-size: 50px;
     }
 }
 

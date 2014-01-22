@@ -11,6 +11,8 @@ $cream:      #EFF0D1;
 		.section-heading {
 			color: $darkgray;
 			margin-bottom: 7px;
+			text-align: left;
+			padding-top: 40px;
 		}
 
 		.perry-profile-pic {
@@ -36,14 +38,35 @@ $cream:      #EFF0D1;
 				line-height: 155px;
 				margin-right: 2.5%;
 		    }
+
+		    @media (min-width : 1025px) {
+		        height: 300px;
+		        width: 300px;
+		        line-height: 300px;
+		        margin-right: 50px;
+		    }
 		}
 
 		.perry-background {
 			margin-top: -3px;
 			margin-bottom: 6%;
+
+			@media (min-width : 1025px) {
+		        width: 480px;
+				display: inline-block;
+				margin-bottom: 0;
+		    }
 		}
 	}
 
+	.contact-perry-wrapper {
+		display: inline-block;
+
+		@media (min-width : 1025px) {
+	        margin-top: -150px;
+	        margin-bottom: 30px;
+	    }
+	}
 
 	.contact-perry, .contact-newspring {
 		margin-right: 20px;
@@ -78,6 +101,12 @@ $cream:      #EFF0D1;
 		    	margin-right: 28px;
 		    }
 
+		    @media (min-width : 1025px) {
+		        display: block;
+		        margin: 0;
+		        padding-bottom: 12px;
+		    }
+
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -107,6 +136,12 @@ $cream:      #EFF0D1;
 				height: 15px;
 				margin-right: 10px;
 		    }
+
+		    @media (min-width : 1025px) {
+		        width: 20px;
+				height: 20px;
+				margin-right: 10px;
+		    }
 		}
 
 		.perry-social-link, .newspring-social-link {
@@ -120,21 +155,50 @@ $cream:      #EFF0D1;
 		    @media (min-width : 768px) and (max-width : 1024px) {
 		        font-size: 17px;
 		    }
+
+		   	@media (min-width : 1025px) {
+		        font-size: 22px;
+		    }
 		}
+	}
+
+	.contact-perry {
+		@media (min-width : 1025px) {
+	        display: block;
+	    }
 	}
 
 	.about-newspring {
 		background: $darkgray;
 
+		.desktop-wrapper {
+			position: relative;
+		}
+
+		.contact-newspring-wrapper {
+			display: block;
+		}
+
+		.section-heading {
+			@media (min-width : 1025px) {
+				text-align: left;
+				padding: 55px 0 35px;
+		    }
+		}
+
 		.newspring-background {
 			color: $cream;
 			margin-bottom: 5.5%;
-			// margin-bottom: 18px;
+
+			@media (min-width : 1025px) {
+		        width: 480px;
+				display: inline-block;
+				margin-bottom: 3.5%;
+		    }
 		}
 
 		.contact-newspring {
 			margin-bottom: 4.5%;
-			// margin-bottom: 10px;
 		}
 
 		.center-that-mess {
@@ -143,6 +207,40 @@ $cream:      #EFF0D1;
 
 		.contact-newspring:last-child {
 			margin-right: 0;
+		}
+
+		.non-desktop-version {
+			@media (min-width : 1025px) {
+				display: none;
+		    }
+		}
+
+		.get-the-app {
+			display: none;
+			width: 320px;
+			height: 500px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			text-align: center;
+
+			@media (min-width : 1025px) {
+				display: inline-block;
+		    }
+
+		    .app-image {
+		    	width: inherit;
+		    	height: 360px;
+		    	background: #FFF;
+		    	display: block;
+		    	text-align: center;
+		    	line-height: 360px;
+		    	margin-bottom: 20px;
+		    }
+
+		    .orange-outline {
+		    	display: block;
+		    }
 		}
 	}
 }

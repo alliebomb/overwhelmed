@@ -8,6 +8,10 @@ $cream:      #EFF0D1;
 	.feel-overwhelmed {
 		background: $cream;
 
+		@media (min-width : 1025px) {
+            padding-bottom: 60px;
+        }
+
 		.overwhelmed-video {
 			height: 140px;
 			width: 240px;
@@ -27,16 +31,34 @@ $cream:      #EFF0D1;
 				width: 540px;
 				line-height: 340px;
 	        }
+
+	        @media (min-width : 1025px) {
+	            height: 420px;
+				width: 720px;
+				line-height: 420px;
+	        }
 		}
 	}
 
 	.take-quiz {
 		background: $orange;
+
+		p {
+			@media (min-width : 1025px) {
+	            width: 700px;
+	            margin: 0 auto;
+	            padding-bottom: 65px;
+	        }
+		}
 	}
 
 	.get-updates {
 		text-align: center;
 		background: $darkgray;
+
+		@media (min-width : 1025px) {
+            padding-bottom: 50px;
+        }
 
 		.name, .email {
 			width: 90%;
@@ -52,14 +74,33 @@ $cream:      #EFF0D1;
 	        @media (min-width : 768px) and (max-width : 1024px) {
 	            width: 60%;
 	        }
+
+	        @media (min-width : 1025px) {
+	            width: 40%;
+	        	font-size: 22px;
+				padding: 14px 18px;
+				margin: 0 auto 20px;
+	        }
 		}
 
 		.email {
 			margin-bottom: 6.5%;
+
+			@media (min-width : 1025px) {
+	            margin-bottom: 35px;
+	        }
 		}
 	}
 
 	.read-chapter-one {
 		background: $orange;
+
+		p {
+			@media (min-width : 1025px) {
+	            width: 700px;
+	            margin: 0 auto;
+	            padding-bottom: 65px;
+	        }
+		}
 	}
 }

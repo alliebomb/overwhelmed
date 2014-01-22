@@ -2,7 +2,13 @@
 .wrapper .feel-overwhelmed {
   background: #eff0d1;
 }
-/* line 11, ../sass/preview.scss */
+@media (min-width: 1025px) {
+  /* line 8, ../sass/preview.scss */
+  .wrapper .feel-overwhelmed {
+    padding-bottom: 60px;
+  }
+}
+/* line 15, ../sass/preview.scss */
 .wrapper .feel-overwhelmed .overwhelmed-video {
   height: 140px;
   width: 240px;
@@ -12,7 +18,7 @@
   line-height: 140px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 11, ../sass/preview.scss */
+  /* line 15, ../sass/preview.scss */
   .wrapper .feel-overwhelmed .overwhelmed-video {
     height: 240px;
     width: 400px;
@@ -20,23 +26,45 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 11, ../sass/preview.scss */
+  /* line 15, ../sass/preview.scss */
   .wrapper .feel-overwhelmed .overwhelmed-video {
     height: 340px;
     width: 540px;
     line-height: 340px;
   }
 }
-/* line 33, ../sass/preview.scss */
+@media (min-width: 1025px) {
+  /* line 15, ../sass/preview.scss */
+  .wrapper .feel-overwhelmed .overwhelmed-video {
+    height: 420px;
+    width: 720px;
+    line-height: 420px;
+  }
+}
+/* line 43, ../sass/preview.scss */
 .wrapper .take-quiz {
   background: #ee5025;
 }
-/* line 37, ../sass/preview.scss */
+@media (min-width: 1025px) {
+  /* line 46, ../sass/preview.scss */
+  .wrapper .take-quiz p {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+  }
+}
+/* line 55, ../sass/preview.scss */
 .wrapper .get-updates {
   text-align: center;
   background: #282a24;
 }
-/* line 41, ../sass/preview.scss */
+@media (min-width: 1025px) {
+  /* line 55, ../sass/preview.scss */
+  .wrapper .get-updates {
+    padding-bottom: 50px;
+  }
+}
+/* line 63, ../sass/preview.scss */
 .wrapper .get-updates .name, .wrapper .get-updates .email {
   width: 90%;
   padding: 1.5% 8% 2% 1.5%;
@@ -45,22 +73,45 @@
   display: block;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 41, ../sass/preview.scss */
+  /* line 63, ../sass/preview.scss */
   .wrapper .get-updates .name, .wrapper .get-updates .email {
     width: 80%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 41, ../sass/preview.scss */
+  /* line 63, ../sass/preview.scss */
   .wrapper .get-updates .name, .wrapper .get-updates .email {
     width: 60%;
   }
 }
-/* line 57, ../sass/preview.scss */
+@media (min-width: 1025px) {
+  /* line 63, ../sass/preview.scss */
+  .wrapper .get-updates .name, .wrapper .get-updates .email {
+    width: 40%;
+    font-size: 22px;
+    padding: 14px 18px;
+    margin: 0 auto 20px;
+  }
+}
+/* line 86, ../sass/preview.scss */
 .wrapper .get-updates .email {
   margin-bottom: 6.5%;
 }
-/* line 62, ../sass/preview.scss */
+@media (min-width: 1025px) {
+  /* line 86, ../sass/preview.scss */
+  .wrapper .get-updates .email {
+    margin-bottom: 35px;
+  }
+}
+/* line 95, ../sass/preview.scss */
 .wrapper .read-chapter-one {
   background: #ee5025;
+}
+@media (min-width: 1025px) {
+  /* line 98, ../sass/preview.scss */
+  .wrapper .read-chapter-one p {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+  }
 }
