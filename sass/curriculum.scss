@@ -23,18 +23,46 @@ $cream:      #EFF0D1;
 // }
 
 .wrapper {
+	background: $darkgray;
+	// background: #FFF;
 
 	.get-overwhelmed-curriculum {
 		background: $cream;
 	}
 
+	.max-width-wrapper {
+		background: #FFF;
+
+		@media (min-width : 1025px) {
+			width: 1200px;
+			margin: 0 auto;
+    	}
+
+		.product-separator {
+			@media (min-width : 1025px) {
+				display: none;
+	        }
+		}
+	}
+
 	.product {
 		text-align: center;
 		background: $darkgray;
+		overflow: hidden;
+
+		@media (min-width : 1025px) {
+			width: 597.5px;
+			display: inline-block;
+			margin-bottom: -2px;
+        }
 
 		.product-wrapper {
 			padding-top: 5%;
 			position: relative;
+
+			@media (min-width : 1025px) {
+				padding-top: 60px;
+	        }
 		}
 
 		.product-number {
@@ -63,6 +91,13 @@ $cream:      #EFF0D1;
 				font-size: 46px;
 				line-height: 85px;
 	        }
+
+	        @media (min-width : 1025px) {
+				width: 70px;
+				height: 70px;
+				font-size: 46px;
+				line-height: 74px;
+	        }
 		}
 
 		.product-image {
@@ -84,6 +119,13 @@ $cream:      #EFF0D1;
 				width: 280px;
 				line-height: 280px;
 	        }
+
+	        @media (min-width : 1025px) {
+				height: 280px;
+				width: 280px;
+				line-height: 280px;
+				margin-bottom: 40px;
+	        }
 		}
 
 		.product-name {
@@ -104,6 +146,12 @@ $cream:      #EFF0D1;
 	            font-size: 20px;
 				letter-spacing: 8px;
 	        }
+
+	        @media (min-width : 1025px) {
+				font-size: 26px;
+				letter-spacing: 10px;
+				margin-bottom: 10px;
+	        }
 		}
 
 		.product-description {
@@ -111,6 +159,12 @@ $cream:      #EFF0D1;
 			width: 40%;
 	        margin: 0 auto 3.5%;
 	        display: block;
+
+	       	@media (min-width : 1025px) {
+	       		width: 55%;
+				font-size: 16px;
+				line-height: 22px;
+	        }
 		}
 
 		.download {
@@ -121,5 +175,17 @@ $cream:      #EFF0D1;
 	.product-separator {
 		height: 3px;
 		background: #FFF;
+
+		@media (min-width : 1025px) {
+			height: 5px;
+        }
+	}
+
+	.product-separator.top-separator {
+		display: none;
+
+		@media (min-width : 1025px) {
+			display: block;
+        }
 	}
 }

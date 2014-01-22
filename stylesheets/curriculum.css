@@ -10,21 +10,57 @@
   src: local("Memphas"), local("Memphas"), url("../fonts/Memphas/Memphas-ExtraBold.otf") format("truetype");
 }
 
-/* line 27, ../sass/curriculum.scss */
+/* line 25, ../sass/curriculum.scss */
+.wrapper {
+  background: #282a24;
+}
+/* line 29, ../sass/curriculum.scss */
 .wrapper .get-overwhelmed-curriculum {
   background: #eff0d1;
 }
-/* line 31, ../sass/curriculum.scss */
+/* line 33, ../sass/curriculum.scss */
+.wrapper .max-width-wrapper {
+  background: #FFF;
+}
+@media (min-width: 1025px) {
+  /* line 33, ../sass/curriculum.scss */
+  .wrapper .max-width-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 41, ../sass/curriculum.scss */
+  .wrapper .max-width-wrapper .product-separator {
+    display: none;
+  }
+}
+/* line 48, ../sass/curriculum.scss */
 .wrapper .product {
   text-align: center;
   background: #282a24;
+  overflow: hidden;
 }
-/* line 35, ../sass/curriculum.scss */
+@media (min-width: 1025px) {
+  /* line 48, ../sass/curriculum.scss */
+  .wrapper .product {
+    width: 597.5px;
+    display: inline-block;
+    margin-bottom: -2px;
+  }
+}
+/* line 59, ../sass/curriculum.scss */
 .wrapper .product .product-wrapper {
   padding-top: 5%;
   position: relative;
 }
-/* line 40, ../sass/curriculum.scss */
+@media (min-width: 1025px) {
+  /* line 59, ../sass/curriculum.scss */
+  .wrapper .product .product-wrapper {
+    padding-top: 60px;
+  }
+}
+/* line 68, ../sass/curriculum.scss */
 .wrapper .product .product-number {
   color: #FFF;
   width: 40px;
@@ -39,7 +75,7 @@
   font-family: "Memphis", serif;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 40, ../sass/curriculum.scss */
+  /* line 68, ../sass/curriculum.scss */
   .wrapper .product .product-number {
     width: 60px;
     height: 60px;
@@ -48,7 +84,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 40, ../sass/curriculum.scss */
+  /* line 68, ../sass/curriculum.scss */
   .wrapper .product .product-number {
     width: 80px;
     height: 80px;
@@ -56,7 +92,16 @@
     line-height: 85px;
   }
 }
-/* line 68, ../sass/curriculum.scss */
+@media (min-width: 1025px) {
+  /* line 68, ../sass/curriculum.scss */
+  .wrapper .product .product-number {
+    width: 70px;
+    height: 70px;
+    font-size: 46px;
+    line-height: 74px;
+  }
+}
+/* line 103, ../sass/curriculum.scss */
 .wrapper .product .product-image {
   width: 120px;
   height: 120px;
@@ -66,7 +111,7 @@
   margin: 0 auto 4.5%;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 68, ../sass/curriculum.scss */
+  /* line 103, ../sass/curriculum.scss */
   .wrapper .product .product-image {
     height: 180px;
     width: 180px;
@@ -74,14 +119,23 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 68, ../sass/curriculum.scss */
+  /* line 103, ../sass/curriculum.scss */
   .wrapper .product .product-image {
     height: 280px;
     width: 280px;
     line-height: 280px;
   }
 }
-/* line 89, ../sass/curriculum.scss */
+@media (min-width: 1025px) {
+  /* line 103, ../sass/curriculum.scss */
+  .wrapper .product .product-image {
+    height: 280px;
+    width: 280px;
+    line-height: 280px;
+    margin-bottom: 40px;
+  }
+}
+/* line 131, ../sass/curriculum.scss */
 .wrapper .product .product-name {
   color: #ee5025;
   margin-bottom: 3%;
@@ -92,32 +146,64 @@
   font-family: "Proxima Nova-Black", "Gotham-Black", Helvetica, sans-serif;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 89, ../sass/curriculum.scss */
+  /* line 131, ../sass/curriculum.scss */
   .wrapper .product .product-name {
     font-size: 16px;
     letter-spacing: 6px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 89, ../sass/curriculum.scss */
+  /* line 131, ../sass/curriculum.scss */
   .wrapper .product .product-name {
     font-size: 20px;
     letter-spacing: 8px;
   }
 }
-/* line 109, ../sass/curriculum.scss */
+@media (min-width: 1025px) {
+  /* line 131, ../sass/curriculum.scss */
+  .wrapper .product .product-name {
+    font-size: 26px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+  }
+}
+/* line 157, ../sass/curriculum.scss */
 .wrapper .product .product-description {
   color: #FFF;
   width: 40%;
   margin: 0 auto 3.5%;
   display: block;
 }
-/* line 116, ../sass/curriculum.scss */
+@media (min-width: 1025px) {
+  /* line 157, ../sass/curriculum.scss */
+  .wrapper .product .product-description {
+    width: 55%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+/* line 170, ../sass/curriculum.scss */
 .wrapper .product .download {
   margin-bottom: 10px;
 }
-/* line 121, ../sass/curriculum.scss */
+/* line 175, ../sass/curriculum.scss */
 .wrapper .product-separator {
   height: 3px;
   background: #FFF;
+}
+@media (min-width: 1025px) {
+  /* line 175, ../sass/curriculum.scss */
+  .wrapper .product-separator {
+    height: 5px;
+  }
+}
+/* line 184, ../sass/curriculum.scss */
+.wrapper .product-separator.top-separator {
+  display: none;
+}
+@media (min-width: 1025px) {
+  /* line 184, ../sass/curriculum.scss */
+  .wrapper .product-separator.top-separator {
+    display: block;
+  }
 }

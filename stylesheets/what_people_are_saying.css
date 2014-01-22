@@ -21,40 +21,27 @@
   /* line 12, ../sass/what_people_are_saying.scss */
   .wrapper .copy {
     font-size: 17px;
-    line-height: 22px;
+    line-height: 20px;
   }
 }
-/* line 30, ../sass/what_people_are_saying.scss */
-.wrapper .pastor-info, .wrapper .testimonial-name {
-  color: #FFF;
-  font-size: 10px;
-}
-@media (min-width: 461px) and (max-width: 767px) {
-  /* line 30, ../sass/what_people_are_saying.scss */
-  .wrapper .pastor-info, .wrapper .testimonial-name {
-    font-size: 12px;
+@media (min-width: 1025px) {
+  /* line 12, ../sass/what_people_are_saying.scss */
+  .wrapper .copy {
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 35px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* line 30, ../sass/what_people_are_saying.scss */
-  .wrapper .pastor-info, .wrapper .testimonial-name {
-    font-size: 14px;
-  }
-}
-/* line 43, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors {
-  background: #282a24;
-}
-/* line 46, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors .pastoral-review {
+/* line 36, ../sass/what_people_are_saying.scss */
+.wrapper .review-wrapper {
   margin: 0 auto 40px;
 }
-/* line 49, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors .pastoral-review:last-child {
+/* line 39, ../sass/what_people_are_saying.scss */
+.wrapper .review-wrapper:last-child {
   margin-bottom: 0;
 }
-/* line 53, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors .pastoral-review .pastor-profile-pic {
+/* line 43, ../sass/what_people_are_saying.scss */
+.wrapper .review-wrapper .reviewer-profile-pic {
   height: 60px;
   width: 60px;
   margin-right: 14px;
@@ -65,52 +52,90 @@
   vertical-align: top;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 53, ../sass/what_people_are_saying.scss */
-  .wrapper .from-pastors .pastoral-review .pastor-profile-pic {
+  /* line 43, ../sass/what_people_are_saying.scss */
+  .wrapper .review-wrapper .reviewer-profile-pic {
     height: 100px;
     width: 100px;
     line-height: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 53, ../sass/what_people_are_saying.scss */
-  .wrapper .from-pastors .pastoral-review .pastor-profile-pic {
+  /* line 43, ../sass/what_people_are_saying.scss */
+  .wrapper .review-wrapper .reviewer-profile-pic {
     height: 140px;
     width: 140px;
     line-height: 140px;
   }
 }
-/* line 76, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors .pastoral-review .review {
-  width: 65%;
+@media (min-width: 1025px) {
+  /* line 43, ../sass/what_people_are_saying.scss */
+  .wrapper .review-wrapper .reviewer-profile-pic {
+    height: 200px;
+    width: 180px;
+    line-height: 200px;
+    margin-right: 30px;
+  }
+}
+/* line 73, ../sass/what_people_are_saying.scss */
+.wrapper .review-wrapper .review {
+  width: 63%;
   margin-top: -2px;
   display: inline-block;
 }
-/* line 81, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors .pastoral-review .review .review-copy {
+/* line 78, ../sass/what_people_are_saying.scss */
+.wrapper .review-wrapper .review .review-copy {
   color: #ee5025;
   margin-bottom: 8px;
 }
-/* line 88, ../sass/what_people_are_saying.scss */
-.wrapper .from-pastors .pastoral-review .review .pastor-info .name {
+/* line 83, ../sass/what_people_are_saying.scss */
+.wrapper .review-wrapper .review .name {
   text-transform: uppercase;
 }
-/* line 96, ../sass/what_people_are_saying.scss */
+/* line 89, ../sass/what_people_are_saying.scss */
+.wrapper .pastor-info, .wrapper .name {
+  color: #FFF;
+  font-size: 10px;
+}
+@media (min-width: 461px) and (max-width: 767px) {
+  /* line 89, ../sass/what_people_are_saying.scss */
+  .wrapper .pastor-info, .wrapper .name {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 89, ../sass/what_people_are_saying.scss */
+  .wrapper .pastor-info, .wrapper .name {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 89, ../sass/what_people_are_saying.scss */
+  .wrapper .pastor-info, .wrapper .name {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 107, ../sass/what_people_are_saying.scss */
+  .wrapper .from-pastors h3, .wrapper .testimonials h3 {
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 114, ../sass/what_people_are_saying.scss */
+  .wrapper .from-pastors, .wrapper .testimonials {
+    padding-bottom: 75px;
+  }
+}
+/* line 120, ../sass/what_people_are_saying.scss */
+.wrapper .from-pastors {
+  background: #282a24;
+}
+/* line 125, ../sass/what_people_are_saying.scss */
 .wrapper .testimonials {
   background: #ee5025;
 }
-/* line 99, ../sass/what_people_are_saying.scss */
-.wrapper .testimonials .testimonial-copy {
+/* line 131, ../sass/what_people_are_saying.scss */
+.wrapper .testimonials .review-wrapper .review .review-copy {
   color: #282a24;
   margin-bottom: 8px;
-}
-/* line 104, ../sass/what_people_are_saying.scss */
-.wrapper .testimonials .testimonial-name {
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  display: block;
-}
-/* line 109, ../sass/what_people_are_saying.scss */
-.wrapper .testimonials .testimonial-name:last-child {
-  margin-bottom: 0;
 }

@@ -199,6 +199,13 @@ $cream:      #EFF0D1;
             text-align: left;
         }
 
+        .orange-outline {
+            @media (min-width : 1025px) {
+                display: block;
+                width: 160px;
+            }
+        }
+
         .inner-wrapper {
             width: 100%;
 

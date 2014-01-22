@@ -7,15 +7,27 @@
   padding-top: 5%;
   background: #ee5025;
 }
-/* line 16, ../sass/free_resources.scss */
+@media (min-width: 1025px) {
+  /* line 12, ../sass/free_resources.scss */
+  .wrapper .resources {
+    padding-bottom: 80px;
+  }
+}
+/* line 20, ../sass/free_resources.scss */
 .wrapper .resources .resource {
   margin-bottom: 30px;
 }
-/* line 19, ../sass/free_resources.scss */
+@media (min-width: 1025px) {
+  /* line 20, ../sass/free_resources.scss */
+  .wrapper .resources .resource {
+    margin-bottom: 80px;
+  }
+}
+/* line 27, ../sass/free_resources.scss */
 .wrapper .resources .resource:last-child {
   margin-bottom: 0;
 }
-/* line 24, ../sass/free_resources.scss */
+/* line 32, ../sass/free_resources.scss */
 .wrapper .resources .resource-image {
   height: 60px;
   width: 60px;
@@ -27,7 +39,7 @@
   vertical-align: top;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 24, ../sass/free_resources.scss */
+  /* line 32, ../sass/free_resources.scss */
   .wrapper .resources .resource-image {
     height: 100px;
     width: 100px;
@@ -35,16 +47,31 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 24, ../sass/free_resources.scss */
+  /* line 32, ../sass/free_resources.scss */
   .wrapper .resources .resource-image {
     height: 140px;
     width: 140px;
     line-height: 140px;
   }
 }
-/* line 47, ../sass/free_resources.scss */
+@media (min-width: 1025px) {
+  /* line 32, ../sass/free_resources.scss */
+  .wrapper .resources .resource-image {
+    height: 120px;
+    width: 180px;
+    margin-right: 35px;
+    line-height: 120px;
+  }
+}
+/* line 62, ../sass/free_resources.scss */
 .wrapper .resources .resource-copy {
-  width: 65%;
+  width: 63%;
   margin-top: -3px;
   display: inline-block;
+}
+@media (min-width: 1025px) {
+  /* line 62, ../sass/free_resources.scss */
+  .wrapper .resources .resource-copy {
+    width: 70%;
+  }
 }

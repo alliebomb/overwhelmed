@@ -28,5 +28,11 @@ $cream:      #EFF0D1;
 			height: 640px;
 			line-height: 640px;
         }
+
+    	@media (min-width : 1025px) {
+	        height: 620px;
+			width: 480px;
+			line-height: 620px;
+	    }
 	}
 }

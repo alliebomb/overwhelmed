@@ -27,3 +27,11 @@
     line-height: 640px;
   }
 }
+@media (min-width: 1025px) {
+  /* line 12, ../sass/buy_the_book.scss */
+  .wrapper .buy-book-options {
+    height: 620px;
+    width: 480px;
+    line-height: 620px;
+  }
+}
