@@ -10,7 +10,7 @@ $cream:      #EFF0D1;
 	}
 
 	.resources {
-		padding-top: 30px;
+		padding-top: 5%;
 		background: $orange;
 
 		.resource {
@@ -29,10 +29,23 @@ $cream:      #EFF0D1;
 			background: #FFF;
 			text-align: center;
 			line-height: 55px;
+			vertical-align: top;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+	            height: 100px;
+				width: 100px;
+				line-height: 100px;
+	        }
+
+	        @media (min-width : 768px) and (max-width : 1024px) {
+	            height: 140px;
+				width: 140px;
+				line-height: 140px;
+	        }
 		}
 
 		.resource-copy {
-			width: 180px;
+			width: 65%;
 			margin-top: -3px;
 			display: inline-block;
 		}

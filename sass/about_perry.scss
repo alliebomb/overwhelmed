@@ -16,17 +16,31 @@ $cream:      #EFF0D1;
 		.perry-profile-pic {
 			width: 75px;
 			height: 75px;
-			margin-right: 8px;
+			margin-right: 2%;
 			display: inline-block;
+			float: left;
+
 			background: #FFF;
 			line-height: 80px;
 			text-align: center;
-			float: left;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+		        width: 110px;
+				height: 110px;
+				line-height: 110px;
+		    }
+
+		    @media (min-width : 768px) and (max-width : 1024px) {
+		        width: 155px;
+				height: 155px;
+				line-height: 155px;
+				margin-right: 2.5%;
+		    }
 		}
 
 		.perry-background {
 			margin-top: -3px;
-			margin-bottom: 15px;
+			margin-bottom: 6%;
 		}
 	}
 
@@ -35,8 +49,34 @@ $cream:      #EFF0D1;
 		margin-right: 20px;
 		display: inline-block;
 
+		@media (min-width : 461px) and (max-width : 644px) {
+			margin-right: 50px;
+	    }
+
+		@media (min-width : 645px) and (max-width : 1024px) {
+	        margin-right: 0px;
+	    }
+
+	    &:last-child {
+			margin-right: 0;
+		}
+
 		.contact-perry-snippet, .contact-newspring-snippet {
 			margin-bottom: 3px;
+
+			@media (min-width : 461px) and (max-width : 644px) {
+
+		    }
+
+			@media (min-width : 645px) and (max-width : 767px) {
+				display: inline-block;
+				margin-right: 18px;
+		    }
+
+		    @media (min-width : 768px) and (max-width : 1024px) {
+		    	display: inline-block;
+		    	margin-right: 28px;
+		    }
 
 			&:last-child {
 				margin-bottom: 0;
@@ -46,15 +86,40 @@ $cream:      #EFF0D1;
 		.perry-social-icon, .newspring-social-icon {
 			width: 8px;
 			height: 8px;
-			margin-top: 2px;
 			margin-right: 5px;
 			background: $orange;
 			display: inline-block;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+		        width: 12px;
+				height: 12px;
+				margin-right: 7px;
+		    }
+
+			@media (min-width : 461px) and (max-width : 767px) {
+		        width: 12px;
+				height: 12px;
+				margin-right: 7px;
+		    }
+
+		    @media (min-width : 768px) and (max-width : 1024px) {
+		        width: 15px;
+				height: 15px;
+				margin-right: 10px;
+		    }
 		}
 
 		.perry-social-link, .newspring-social-link {
 			color: $orange;
 			font-size: 13px;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+		        font-size: 15px;
+		    }
+
+		    @media (min-width : 768px) and (max-width : 1024px) {
+		        font-size: 17px;
+		    }
 		}
 	}
 
@@ -63,11 +128,21 @@ $cream:      #EFF0D1;
 
 		.newspring-background {
 			color: $cream;
-			margin-bottom: 18px;
+			margin-bottom: 5.5%;
+			// margin-bottom: 18px;
 		}
 
 		.contact-newspring {
-			margin-bottom: 10px;
+			margin-bottom: 4.5%;
+			// margin-bottom: 10px;
+		}
+
+		.center-that-mess {
+			text-align: center;
+		}
+
+		.contact-newspring:last-child {
+			margin-right: 0;
 		}
 	}
 }

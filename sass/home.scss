@@ -3,6 +3,7 @@ $darkgray:   #282a24;
 $lightgray:  #32342D;
 $cream:      #EFF0D1;
 
+
 .wrapper {
 
     .main-image {
@@ -10,6 +11,16 @@ $cream:      #EFF0D1;
         text-align: center;
         line-height: 140px;
         background: #FFF;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            height: 250px;
+            line-height: 250px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            height: 350px;
+            line-height: 350px;
+        }
     }
 
     .arrow-up {
@@ -18,13 +29,27 @@ $cream:      #EFF0D1;
         height: 0;
         border-left: 10px solid rgba(0, 0, 0, 0);
         border-right: 10px solid rgba(0, 0, 0, 0);
-        border-bottom: 10px solid rgb(0, 0, 0);
+        border-bottom: 10px solid $darkgray;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            margin: -12px auto 0;
+            border-left: 12px solid rgba(0, 0, 0, 0);
+            border-right: 12px solid rgba(0, 0, 0, 0);
+            border-bottom: 12px solid $darkgray;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            margin: -15px auto 0;
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+            border-bottom: 15px solid $darkgray;
+        }
     }
 
     .slides-wrapper, .shares-wrapper {
-        width: 320px;
+        width: inherit;
         height: inherit;
-        margin: 0 auto;
+        margin: 0 auto; 
     }
 
     .slides {
@@ -32,12 +57,32 @@ $cream:      #EFF0D1;
         background: $darkgray;
         text-align: center;
 
+        @media (min-width : 461px) and (max-width : 767px) {
+            height: 45px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            height: 60px;
+        }
+
         .slide {
             color: $cream;
-            margin: 0px 25px;
-            line-height: 36px;
+            margin: 0px 8.5%;
+            line-height: 34px;
             font-size: 14px;
             display: inline-block;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                line-height: 52px;
+                font-size: 18px;
+                margin: 0 9.8%;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                line-height: 68px;
+                font-size: 22px;
+                margin: 0 11%;
+            }
         }
     }
 
@@ -49,17 +94,37 @@ $cream:      #EFF0D1;
         height: 90px;
         background: $cream;
 
+        @media (min-width : 461px) and (max-width : 767px) {
+            height: 150px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            height: 180px;
+        }
+
         .share {
             color: #FFF;
-            width: 80px;
-            height: 50px;
-            margin: 20px 8px;
+            width: 25%;
+            height: 57%;
+            margin: 20px 3%;
             font-size: 14px;
             line-height: 50px;
             text-align: center;
             display: inline-block;
             background: $orange;
             text-transform: uppercase;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                margin: 30px 3%;
+                font-size: 18px;
+                line-height: 90px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                margin: 40px 3%;
+                font-size: 20px;
+                line-height: 105px;
+            }
         }
     }
 
@@ -67,26 +132,45 @@ $cream:      #EFF0D1;
         background: $darkgray;
         text-align: center;
 
+        .inner-wrapper {
+            width: 100%;
+        }
+
         h3 {
-            padding-bottom: 30px;
+            padding-bottom: 7%;
+        }
+
+        .book-and-description {
+            margin: 0 auto 6%;
         }
 
         .book-image {
             width: 80px;
             height: 140px;
-            margin-bottom: 30px;
             background: $orange;
             display: inline-block;
             text-align: center;
             line-height: 140px;
+            vertical-align: top;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                width: 120px;
+                height: 200px;
+                line-height: 200px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                width: 160px;
+                height: 240px;
+                line-height: 240px;
+            }
         }
 
         .book-description {
             color: $cream;
-            width: 140px;
-            height: 140px;
-            margin-left: 30px;
-            margin-top: 5px;
+            width: 55%;
+            margin-left: 8%;
+            margin-top: 2%;
             text-align: left;
             display: inline-block;
         }
@@ -103,6 +187,16 @@ $cream:      #EFF0D1;
             font-size: 10px;
             line-height: 12px;
             display: inline-block;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
     }
 
@@ -115,16 +209,44 @@ $cream:      #EFF0D1;
             font-size: 11px;
             line-height: 16px;
             margin-bottom: 5px;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                font-size: 13px;
+                line-height: 18px;
+                margin-bottom: 10px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                font-size: 15px;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
         }
 
         .handle, .time-stamp {
             color: $cream;
             font-size: 10px;
             display: inline-block;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                font-size: 12px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                font-size: 14px;
+            }
         }
 
         .time-stamp {
             margin-bottom: 15px;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                margin-bottom: 20px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                margin-bottom: 25px;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -138,10 +260,22 @@ $cream:      #EFF0D1;
         .instagram-image {
             width: 240px;
             height: 240px;
-            margin: 0 auto 14px;
+            margin: 0 auto 4%;
             background: #FFF;
             text-align: center;
             line-height: 240px;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                width: 300px;
+                height: 300px;
+                line-height: 300px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                width: 360px;
+                height: 360px;
+                line-height: 360px; 
+            }
         }
 
     }
@@ -152,10 +286,22 @@ $cream:      #EFF0D1;
         .youtube-video {
             width: 240px;
             height: 140px;
-            margin: 0 auto 14px;
+            margin: 0 auto 4%;
             background: #FFF;
             text-align: center;
             line-height: 140px;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                width: 300px;
+                height: 200px;
+                line-height: 200px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                width: 360px;
+                height: 260px;
+                line-height: 260px; 
+            }
         }
     }
 
@@ -168,9 +314,18 @@ $cream:      #EFF0D1;
             &:last-child {
                 margin-bottom: 0;
             }
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                margin-bottom: 15px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                margin-bottom: 20px;
+            }
         }
 
         .contact-section-header, .contact-snippet {
+            margin-left: 5%;
             display: block;
             font-size: 12px;
             line-height: 16px;
@@ -180,6 +335,16 @@ $cream:      #EFF0D1;
             background: none;
             text-decoration: none;
             font-weight: normal;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         .contact-section-header {

@@ -1,6 +1,18 @@
 @import "compass/css3";
 @import "compass/reset";
 
+// @media screen and (orientation:portrait)
+// @media screen and (orientation:landscape)
+
+// @medai only screen
+// and ($min-width)
+// and ($max-width)
+// and (orientation: portrait)
+
+// $min-width: min-width : 461px;
+// $max-width: min-width : 1024px;
+
+
 $orange:     #ee5025;
 $darkgray:   #282a24;
 $lightgray:  #32342D;
@@ -42,7 +54,8 @@ Stretch     ~ -1201px (see last slide in the .pdf for UI)
 body {
     width: 100%;
     background: $cream;
-    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    // font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-family: "Proxima Nova", "Gotham", Helvetica, sans-serif;
 
 }
 
@@ -115,6 +128,16 @@ header {
     background: $orange;
     position: relative;
 
+    @media (min-width : 461px) and (max-width : 767px) {
+        height: 50px;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        height: 60px;
+    }
+
+
+
     h2 {
         font-size: 24px;
         display: inline-block;
@@ -124,6 +147,18 @@ header {
         font-weight: bold;
         text-transform: uppercase;
         font-family: "Memphis", serif;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            font-size: 28px;
+            line-height: 53px;
+            margin-left: 15px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            font-size: 32px;
+            line-height: 63px;
+            margin-left: 20px;
+        }
     }
 
     .hamburger, .hamburger-x {
@@ -134,11 +169,28 @@ header {
         position: absolute;
         right: 0;
 
+        @media (min-width : 461px) and (max-width : 767px) {
+            width: 50px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            width: 60px;
+        }
+
         .meat {
             height: 3px;
             margin: 8px auto 0;
             background: rgb(255, 255, 255);
             width: 55%;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                margin: 10px auto 0;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                height: 4px;
+                margin: 12px auto 0;
+            }
         }
     }
 
@@ -161,50 +213,98 @@ footer {
     .footer-separator {
         height: 10px;
         background: #FFF;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            height: 15px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            height: 20px;
+        }
     }
 
     .inner-wrapper {
         width: 260px;
         height: inherit;
         margin: 0 auto;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            width: 340px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            width: 400px;
+        }
     }
 
     .random-white-block {
         width: 30px;
         height: 45px;
-        margin-bottom: 20px;
+        margin-bottom: 10%;
         background: #FFF;
         display: inline-block;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            width: 40px;
+            height: 55px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            width: 50px;
+            height: 65px;
+        }
     }
 
     .copyright, .book-suggestion-text {
         color: #FFF;
-        margin: 10px;
-        font-size: 10px;
-        line-height: 14px;
+        margin: 4%;
         display: inline-block;
+        vertical-align: top;
     }
 
     .book-suggestion {
-        height: 110px;
-        padding-top: 10px;
+        padding: 4% 0;
         background: $darkgray;
 
         .book-suggestion-image {
             width: 70px;
             height: 100px;
-            margin: 0 10px;
+            margin: 0 4%;
             background: #FFF;
             display: inline-block;
             text-align: center;
             line-height: 100px;
+            vertical-align: top;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                width: 90px;
+                height: 130px;
+                line-height: 130px;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                width: 110px;
+                height: 165px;
+                line-height: 165px;
+            }
         }
 
         .book-suggestion-text {
-            margin: 0;
-            margin-top: 10px;
+            // margin-top: 10px;
+            // margin-left: -5px;
+            // width: 127px;
+
+            margin-top: 6%;
             margin-left: -5px;
-            width: 127px;
+            width: 60%;
+
+            @media (min-width : 461px) and (max-width : 767px) {
+                margin-top: 8%;
+            }
+
+            @media (min-width : 768px) and (max-width : 1024px) {
+                margin-top: 11%;
+            }
 
             .unleash-link {
                 color: $orange;
@@ -224,20 +324,47 @@ footer {
     background: $darkgray;
     padding: 20px 0;
     text-align: center;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        padding: 25px 0;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        padding: 30px 0;
+    }
 }
 
 /* bottom padding for main sections*/
 
 .padding-bottom {
     padding-bottom: 32px;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        padding-bottom: 38px;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        padding-bottom: 46px;
+    }
 }
 
 /* set wrappers */
 
 .inner-wrapper {
-    width: 260px;
+    // width: 260px;
+    width: 80%;
     height: inherit;
     margin: 0 auto;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        // width: 75%;
+        // border: 4px solid blue;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        // width: 60%;
+        // border: 4px solid blue;
+    }
 }
 
 /* end wrappers */
@@ -247,6 +374,33 @@ footer {
 p.standard-copy {
     font-size: 12px;
     line-height: 16px;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        // font-size: 14px;
+        // line-height: 18px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.small-type {
+    font-size: 10px;
+    line-height: 14px;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 
@@ -256,12 +410,23 @@ p.standard-copy {
     border: 2px solid $orange;
     display: inline-block;
     font-size: 15px;
-    font-family: "Gotham", "Proxima Nova", Helvetica, sans-serif;
+    font-family: "Proxima Nova", "Gotham", Helvetica, sans-serif;
     text-transform: uppercase;
 
     &:hover {
         color: #FFF;
         background: #ee5025;
+    }
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        padding: 16px 28px;
+        font-size: 22px;
+        border: 3px solid $orange;
     }
 }
 
@@ -277,7 +442,20 @@ p.standard-copy {
         letter-spacing: 4px;
         text-transform: uppercase;
         font-size: 10px;
-        font-family: "Gotham-Black", "Proxima Nova", Helvetica, sans-serif;
+        font-family: "Proxima Nova", "Gotham-Black", Helvetica, sans-serif;
+        // font-family: "Proxima Nova-Black", "Gotham-Black", Helvetica, sans-serif;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            padding-top: 30px;
+            letter-spacing: 5px;
+            font-size: 12px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            padding-top: 35px;
+            letter-spacing: 6px;
+            font-size: 14px;
+        }
     }
 
     h1 {
@@ -289,6 +467,18 @@ p.standard-copy {
         letter-spacing: 1px;
         font-size: 24px;
         font-family: "Memphis", serif;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            padding-bottom: 20px;
+            line-height: 40px;
+            font-size: 30px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            padding-bottom: 25px;
+            line-height: 44px;
+            font-size: 34px;
+        }
     }
 }
 
@@ -305,6 +495,16 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     font-family: "Memphis", serif;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        padding: 34px 0 24px;
+        font-size: 24px;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        padding: 40px 0 30px;
+        font-size: 30px;
+    }
 }
 
 /* end section heading <h3> */

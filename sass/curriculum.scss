@@ -33,7 +33,7 @@ $cream:      #EFF0D1;
 		background: $darkgray;
 
 		.product-wrapper {
-			padding-top: 30px;
+			padding-top: 5%;
 			position: relative;
 		}
 
@@ -49,6 +49,20 @@ $cream:      #EFF0D1;
 			top: 0;
 			left: 0;
 			font-family: "Memphis", serif;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+	            width: 60px;
+				height: 60px;
+				font-size: 38px;
+				line-height: 65px;
+	        }
+
+	        @media (min-width : 768px) and (max-width : 1024px) {
+	            width: 80px;
+				height: 80px;
+				font-size: 46px;
+				line-height: 85px;
+	        }
 		}
 
 		.product-image {
@@ -57,25 +71,45 @@ $cream:      #EFF0D1;
 			background: #FFF;
 			text-align: center;
 			line-height: 120px;
-			margin: 0 auto 20px;
+			margin: 0 auto 4.5%;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+	            height: 180px;
+				width: 180px;
+				line-height: 180px;
+	        }
+
+	        @media (min-width : 768px) and (max-width : 1024px) {
+	            height: 280px;
+				width: 280px;
+				line-height: 280px;
+	        }
 		}
 
 		.product-name {
 			color: $orange;
-			margin-bottom: 6px;
+			margin-bottom: 3%;
 			display: block;
 			font-size: 12px;
 			letter-spacing: 4px;
 			text-transform: uppercase;
-			font-family: "Gotham-Black", "Proxima Nova", Helvetica, sans-serif;
+			font-family: "Proxima Nova-Black", "Gotham-Black", Helvetica, sans-serif;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+	            font-size: 16px;
+				letter-spacing: 6px;
+	        }
+
+	        @media (min-width : 768px) and (max-width : 1024px) {
+	            font-size: 20px;
+				letter-spacing: 8px;
+	        }
 		}
 
 		.product-description {
 			color: #FFF;
-			width: 180px;
-	        margin: 0 auto 15px;
-	        font-size: 10px;
-	        line-height: 14px;
+			width: 40%;
+	        margin: 0 auto 3.5%;
 	        display: block;
 		}
 

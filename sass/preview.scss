@@ -15,6 +15,18 @@ $cream:      #EFF0D1;
 			background: #FFF;
 			text-align: center;
 			line-height: 140px;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+			   height: 240px;
+				width: 400px;
+				line-height: 240px;
+	        }
+
+	        @media (min-width : 768px) and (max-width : 1024px) {
+	            height: 340px;
+				width: 540px;
+				line-height: 340px;
+	        }
 		}
 	}
 
@@ -27,14 +39,23 @@ $cream:      #EFF0D1;
 		background: $darkgray;
 
 		.name, .email {
-			width: 100%;
-			padding: 7px 8px;
+			width: 90%;
+			padding: 1.5% 8% 2% 1.5%;
 			font-size: 12px;
-			margin-bottom: 8px;
+			margin: 0 auto 3%;
+			display: block;
+
+			@media (min-width : 461px) and (max-width : 767px) {
+				width: 80%;
+	        }
+
+	        @media (min-width : 768px) and (max-width : 1024px) {
+	            width: 60%;
+	        }
 		}
 
 		.email {
-			margin-bottom: 20px;
+			margin-bottom: 6.5%;
 		}
 	}
 

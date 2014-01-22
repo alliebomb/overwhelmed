@@ -15,18 +15,36 @@ $cream:      #EFF0D1;
 		font-weight: bold;
 		letter-spacing: 1px;
 		font-family: "Memphis", serif;
+
+		@media (min-width : 461px) and (max-width : 767px) {
+            font-size: 15px;
+			line-height: 18px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            font-size: 17px;
+			line-height: 22px;
+        }
 	}
 
 	.pastor-info, .testimonial-name {
 		color: #FFF;
 		font-size: 10px;
+
+		@media (min-width : 461px) and (max-width : 767px) {
+            font-size: 12px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            font-size: 14px;
+        }
 	}
 
 	.from-pastors {
 		background: $darkgray;
 
 		.pastoral-review {
-			margin-bottom: 40px;
+			margin: 0 auto 40px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -40,10 +58,23 @@ $cream:      #EFF0D1;
 				background: #FFF;
 				text-align: center;
 				line-height: 55px;
+				vertical-align: top;
+
+				@media (min-width : 461px) and (max-width : 767px) {
+		            height: 100px;
+					width: 100px;
+					line-height: 100px;
+		        }
+
+		        @media (min-width : 768px) and (max-width : 1024px) {
+		            height: 140px;
+					width: 140px;
+					line-height: 140px;
+		        }
 			}
 
 			.review {
-				width: 180px;
+				width: 65%;
 				margin-top: -2px;
 				display: inline-block;
 

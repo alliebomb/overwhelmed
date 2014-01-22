@@ -16,7 +16,20 @@ $arrow-size: 9px;
         font-size: 20px;
         text-transform: uppercase;
         font-family: "Memphis", serif;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            padding: 14px 0;
+            padding-left: 18px;
+            font-size: 22px;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            padding: 18px 0;
+            padding-left: 26px;
+            font-size: 24px;
+        }
     }
+
 
     .spacer {
         height: 2px;
@@ -26,13 +39,24 @@ $arrow-size: 9px;
 
 }
 
-
 .x-container {
     position: relative;
     width: 22px;
     height: 22px;
     background: #FFF;
     margin: 10px auto;
+
+    @media (min-width : 461px) and (max-width : 767px) {
+        width: 28px;
+        height: 28px;
+        margin: 12px auto;
+    }
+
+    @media (min-width : 768px) and (max-width : 1024px) {
+        width: 34px;
+        height: 34px;
+        margin: 14px auto;
+    }
 
     .x-arrow-up, .x-arrow-down, .x-arrow-left, .x-arrow-right {
         position: absolute;
@@ -43,35 +67,87 @@ $arrow-size: 9px;
     .x-arrow-up, .x-arrow-down {
         border-left: $arrow-size solid rgba(0, 0, 0, 0);
         border-right: $arrow-size solid rgba(0, 0, 0, 0);
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            border-left: 12px solid rgba(0, 0, 0, 0);
+            border-right: 12px solid rgba(0, 0, 0, 0);
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+        }
     }
 
     .x-arrow-left, .x-arrow-right {
-        border-top: $arrow-size solid rgba(0, 0, 0, 0);
+        border-top:    $arrow-size solid rgba(0, 0, 0, 0);
         border-bottom: $arrow-size solid rgba(0, 0, 0, 0);
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            border-top:   12px solid rgba(0, 0, 0, 0);
+            border-bottom: 12px solid rgba(0, 0, 0, 0);
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            border-top:   15px solid rgba(0, 0, 0, 0);
+            border-bottom: 15px solid rgba(0, 0, 0, 0);
+        }
     }
 
     .x-arrow-up {
         bottom: 0;
         left: 2px;
         border-bottom: $arrow-size solid $darkgray;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            border-bottom: 12px solid $darkgray;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            border-bottom: 15px solid $darkgray;
+        }
     }
 
     .x-arrow-down {
         top: 0;
         left: 2px;
         border-top: $arrow-size solid $darkgray;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            border-top: 12px solid $darkgray;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            border-top: 15px solid $darkgray;
+        }
     }
 
     .x-arrow-left {
         right: 0;
         top: 2px;
         border-right: $arrow-size solid $darkgray;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            border-right: 12px solid $darkgray;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            border-right: 15px solid $darkgray;
+        }
     }
 
     .x-arrow-right {
         left: 0;
         top: 2px;
         border-left: $arrow-size solid $darkgray;
+
+        @media (min-width : 461px) and (max-width : 767px) {
+            border-left: 12px solid $darkgray;
+        }
+
+        @media (min-width : 768px) and (max-width : 1024px) {
+            border-left: 15px solid $darkgray;
+        }
     }
 }
 

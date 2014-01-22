@@ -11,27 +11,56 @@
   text-align: center;
   line-height: 140px;
 }
-/* line 21, ../sass/preview.scss */
+@media (min-width: 461px) and (max-width: 767px) {
+  /* line 11, ../sass/preview.scss */
+  .wrapper .feel-overwhelmed .overwhelmed-video {
+    height: 240px;
+    width: 400px;
+    line-height: 240px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 11, ../sass/preview.scss */
+  .wrapper .feel-overwhelmed .overwhelmed-video {
+    height: 340px;
+    width: 540px;
+    line-height: 340px;
+  }
+}
+/* line 33, ../sass/preview.scss */
 .wrapper .take-quiz {
   background: #ee5025;
 }
-/* line 25, ../sass/preview.scss */
+/* line 37, ../sass/preview.scss */
 .wrapper .get-updates {
   text-align: center;
   background: #282a24;
 }
-/* line 29, ../sass/preview.scss */
-.wrapper .get-updates .name, .wrapper .get-updates .email {
-  width: 100%;
-  padding: 7px 8px;
-  font-size: 12px;
-  margin-bottom: 8px;
-}
-/* line 36, ../sass/preview.scss */
-.wrapper .get-updates .email {
-  margin-bottom: 20px;
-}
 /* line 41, ../sass/preview.scss */
+.wrapper .get-updates .name, .wrapper .get-updates .email {
+  width: 90%;
+  padding: 1.5% 8% 2% 1.5%;
+  font-size: 12px;
+  margin: 0 auto 3%;
+  display: block;
+}
+@media (min-width: 461px) and (max-width: 767px) {
+  /* line 41, ../sass/preview.scss */
+  .wrapper .get-updates .name, .wrapper .get-updates .email {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 41, ../sass/preview.scss */
+  .wrapper .get-updates .name, .wrapper .get-updates .email {
+    width: 60%;
+  }
+}
+/* line 57, ../sass/preview.scss */
+.wrapper .get-updates .email {
+  margin-bottom: 6.5%;
+}
+/* line 62, ../sass/preview.scss */
 .wrapper .read-chapter-one {
   background: #ee5025;
 }
