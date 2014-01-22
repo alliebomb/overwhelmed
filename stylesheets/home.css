@@ -1,30 +1,57 @@
 /* line 7, ../sass/home.scss */
 .wrapper {
+  background: #FFF;
   /* set references */
   /* end references */
 }
-/* line 9, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 10, ../sass/home.scss */
+  .wrapper .image-slides-shares-wrapper {
+    width: 1200px;
+    background: #FFF;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 18, ../sass/home.scss */
+  .wrapper .image-slides-shares-wrapper .image-and-slides-wrapper {
+    width: 900px;
+    display: inline-block;
+  }
+}
+/* line 26, ../sass/home.scss */
 .wrapper .main-image {
   height: 140px;
   text-align: center;
   line-height: 140px;
   background: #FFF;
+  vertical-align: top;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 9, ../sass/home.scss */
+  /* line 26, ../sass/home.scss */
   .wrapper .main-image {
     height: 250px;
     line-height: 250px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 9, ../sass/home.scss */
+  /* line 26, ../sass/home.scss */
   .wrapper .main-image {
     height: 350px;
     line-height: 350px;
   }
 }
-/* line 26, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 26, ../sass/home.scss */
+  .wrapper .main-image {
+    height: 385px;
+    width: inherit;
+    line-height: 385px;
+    background: lightgray;
+  }
+}
+/* line 51, ../sass/home.scss */
 .wrapper .arrow-up {
   margin: -10px auto 0;
   width: 0;
@@ -34,7 +61,7 @@
   border-bottom: 10px solid #282a24;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 26, ../sass/home.scss */
+  /* line 51, ../sass/home.scss */
   .wrapper .arrow-up {
     margin: -12px auto 0;
     border-left: 12px solid rgba(0, 0, 0, 0);
@@ -43,7 +70,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 26, ../sass/home.scss */
+  /* line 51, ../sass/home.scss */
   .wrapper .arrow-up {
     margin: -15px auto 0;
     border-left: 15px solid rgba(0, 0, 0, 0);
@@ -51,31 +78,46 @@
     border-bottom: 15px solid #282a24;
   }
 }
-/* line 49, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 51, ../sass/home.scss */
+  .wrapper .arrow-up {
+    margin: -20px auto 0;
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    border-bottom: 20px solid #282a24;
+  }
+}
+/* line 81, ../sass/home.scss */
 .wrapper .slides-wrapper, .wrapper .shares-wrapper {
   width: inherit;
   height: inherit;
   margin: 0 auto;
 }
-/* line 55, ../sass/home.scss */
+/* line 87, ../sass/home.scss */
 .wrapper .slides {
   height: 30px;
   background: #282a24;
   text-align: center;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 55, ../sass/home.scss */
+  /* line 87, ../sass/home.scss */
   .wrapper .slides {
     height: 45px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 55, ../sass/home.scss */
+  /* line 87, ../sass/home.scss */
   .wrapper .slides {
     height: 60px;
   }
 }
-/* line 68, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 87, ../sass/home.scss */
+  .wrapper .slides {
+    height: 50px;
+  }
+}
+/* line 104, ../sass/home.scss */
 .wrapper .slides .slide {
   color: #eff0d1;
   margin: 0px 8.5%;
@@ -84,7 +126,7 @@
   display: inline-block;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 68, ../sass/home.scss */
+  /* line 104, ../sass/home.scss */
   .wrapper .slides .slide {
     line-height: 52px;
     font-size: 18px;
@@ -92,35 +134,52 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 68, ../sass/home.scss */
+  /* line 104, ../sass/home.scss */
   .wrapper .slides .slide {
     line-height: 68px;
     font-size: 22px;
     margin: 0 11%;
   }
 }
-/* line 89, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 104, ../sass/home.scss */
+  .wrapper .slides .slide {
+    line-height: 58px;
+    font-size: 18px;
+    margin: 0 12%;
+  }
+}
+/* line 131, ../sass/home.scss */
 .wrapper .shares-wrapper {
   text-align: center;
 }
-/* line 93, ../sass/home.scss */
+/* line 135, ../sass/home.scss */
 .wrapper .shares {
   height: 90px;
   background: #eff0d1;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 93, ../sass/home.scss */
+  /* line 135, ../sass/home.scss */
   .wrapper .shares {
     height: 150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 93, ../sass/home.scss */
+  /* line 135, ../sass/home.scss */
   .wrapper .shares {
     height: 180px;
   }
 }
-/* line 105, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 135, ../sass/home.scss */
+  .wrapper .shares {
+    height: none;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+/* line 154, ../sass/home.scss */
 .wrapper .shares .share {
   color: #FFF;
   width: 25%;
@@ -132,9 +191,10 @@
   display: inline-block;
   background: #ee5025;
   text-transform: uppercase;
+  vertical-align: top;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 105, ../sass/home.scss */
+  /* line 154, ../sass/home.scss */
   .wrapper .shares .share {
     margin: 30px 3%;
     font-size: 18px;
@@ -142,31 +202,65 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 105, ../sass/home.scss */
+  /* line 154, ../sass/home.scss */
   .wrapper .shares .share {
     margin: 40px 3%;
     font-size: 20px;
     line-height: 105px;
   }
 }
-/* line 131, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 154, ../sass/home.scss */
+  .wrapper .shares .share {
+    height: 115px;
+    line-height: 125px;
+    width: 280px;
+    display: block;
+    margin: 0 0 20px 15px;
+    text-align: center;
+    font-size: 32px;
+  }
+}
+/* line 191, ../sass/home.scss */
 .wrapper .about-the-book {
   background: #282a24;
   text-align: center;
+  overflow: hidden;
 }
-/* line 135, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 191, ../sass/home.scss */
+  .wrapper .about-the-book {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+/* line 202, ../sass/home.scss */
 .wrapper .about-the-book .inner-wrapper {
   width: 100%;
 }
-/* line 139, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 202, ../sass/home.scss */
+  .wrapper .about-the-book .inner-wrapper {
+    width: 900px;
+  }
+}
+/* line 210, ../sass/home.scss */
 .wrapper .about-the-book h3 {
   padding-bottom: 7%;
 }
-/* line 143, ../sass/home.scss */
+/* line 214, ../sass/home.scss */
 .wrapper .about-the-book .book-and-description {
   margin: 0 auto 6%;
 }
-/* line 147, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 214, ../sass/home.scss */
+  .wrapper .about-the-book .book-and-description {
+    margin: 0;
+    height: 360px;
+  }
+}
+/* line 223, ../sass/home.scss */
 .wrapper .about-the-book .book-image {
   width: 80px;
   height: 140px;
@@ -177,7 +271,7 @@
   vertical-align: top;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 147, ../sass/home.scss */
+  /* line 223, ../sass/home.scss */
   .wrapper .about-the-book .book-image {
     width: 120px;
     height: 200px;
@@ -185,14 +279,22 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 147, ../sass/home.scss */
+  /* line 223, ../sass/home.scss */
   .wrapper .about-the-book .book-image {
     width: 160px;
     height: 240px;
     line-height: 240px;
   }
 }
-/* line 169, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 223, ../sass/home.scss */
+  .wrapper .about-the-book .book-image {
+    width: 380px;
+    height: 480px;
+    line-height: 438px;
+  }
+}
+/* line 251, ../sass/home.scss */
 .wrapper .about-the-book .book-description {
   color: #eff0d1;
   width: 55%;
@@ -201,12 +303,49 @@
   text-align: left;
   display: inline-block;
 }
-/* line 181, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 260, ../sass/home.scss */
+  .wrapper .about-the-book .non-desktop-version {
+    display: none;
+  }
+}
+/* line 266, ../sass/home.scss */
+.wrapper .about-the-book .desktop-version {
+  display: none;
+}
+@media (min-width: 1025px) {
+  /* line 266, ../sass/home.scss */
+  .wrapper .about-the-book .desktop-version {
+    width: 44%;
+    margin-left: 80px;
+    display: inline-block;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 275, ../sass/home.scss */
+  .wrapper .about-the-book .desktop-version .buy-it-now {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+}
+/* line 284, ../sass/home.scss */
+.wrapper .twitter-instagram-youtube-wrapper {
+  background: #ee5025;
+}
+@media (min-width: 1025px) {
+  /* line 287, ../sass/home.scss */
+  .wrapper .twitter-instagram-youtube-wrapper .desktop-inner-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+/* line 298, ../sass/home.scss */
 .wrapper .youtube-reference, .wrapper .instagram-reference, .wrapper .contact-wrapper {
   display: block;
   text-align: center;
 }
-/* line 185, ../sass/home.scss */
+/* line 302, ../sass/home.scss */
 .wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
   color: #eff0d1;
   font-size: 10px;
@@ -214,31 +353,58 @@
   display: inline-block;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 185, ../sass/home.scss */
+  /* line 302, ../sass/home.scss */
   .wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
     font-size: 12px;
     line-height: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 185, ../sass/home.scss */
+  /* line 302, ../sass/home.scss */
   .wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
     font-size: 14px;
     line-height: 16px;
   }
 }
-/* line 205, ../sass/home.scss */
+/* line 322, ../sass/home.scss */
+.wrapper .twitter, .wrapper .instagram, .wrapper .youtube {
+  vertical-align: top;
+}
+@media (min-width: 1025px) {
+  /* line 322, ../sass/home.scss */
+  .wrapper .twitter, .wrapper .instagram, .wrapper .youtube {
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 330, ../sass/home.scss */
+  .wrapper .twitter .inner-wrapper, .wrapper .instagram .inner-wrapper, .wrapper .youtube .inner-wrapper {
+    width: 290px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 338, ../sass/home.scss */
+  .wrapper .twitter h3, .wrapper .instagram h3, .wrapper .youtube h3 {
+    font-size: 20px;
+    padding: 25px 0 20px;
+  }
+}
+/* line 346, ../sass/home.scss */
 .wrapper .twitter {
   background: #ee5025;
+  text-align: left;
 }
-/* line 208, ../sass/home.scss */
+/* line 350, ../sass/home.scss */
 .wrapper .twitter .tweet {
   font-size: 11px;
   line-height: 16px;
   margin-bottom: 5px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 208, ../sass/home.scss */
+  /* line 350, ../sass/home.scss */
   .wrapper .twitter .tweet {
     font-size: 13px;
     line-height: 18px;
@@ -246,56 +412,76 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 208, ../sass/home.scss */
+  /* line 350, ../sass/home.scss */
   .wrapper .twitter .tweet {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 15px;
   }
 }
-/* line 226, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 350, ../sass/home.scss */
+  .wrapper .twitter .tweet {
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 0;
+  }
+}
+/* line 374, ../sass/home.scss */
 .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
   color: #eff0d1;
   font-size: 10px;
   display: inline-block;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 226, ../sass/home.scss */
+  /* line 374, ../sass/home.scss */
   .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
     font-size: 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 226, ../sass/home.scss */
+  /* line 374, ../sass/home.scss */
   .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
     font-size: 14px;
   }
 }
-/* line 240, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 374, ../sass/home.scss */
+  .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
+    font-size: 14px;
+  }
+}
+/* line 392, ../sass/home.scss */
 .wrapper .twitter .time-stamp {
   margin-bottom: 15px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 240, ../sass/home.scss */
+  /* line 392, ../sass/home.scss */
   .wrapper .twitter .time-stamp {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 240, ../sass/home.scss */
+  /* line 392, ../sass/home.scss */
   .wrapper .twitter .time-stamp {
     margin-bottom: 25px;
   }
 }
-/* line 251, ../sass/home.scss */
+/* line 403, ../sass/home.scss */
 .wrapper .twitter .time-stamp:last-child {
   margin-bottom: 0;
 }
-/* line 257, ../sass/home.scss */
+/* line 409, ../sass/home.scss */
 .wrapper .instagram {
   background: #282a24;
 }
-/* line 260, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 409, ../sass/home.scss */
+  .wrapper .instagram {
+    background: #ee5025;
+  }
+}
+/* line 416, ../sass/home.scss */
 .wrapper .instagram .instagram-image {
   width: 240px;
   height: 240px;
@@ -305,7 +491,7 @@
   line-height: 240px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 260, ../sass/home.scss */
+  /* line 416, ../sass/home.scss */
   .wrapper .instagram .instagram-image {
     width: 300px;
     height: 300px;
@@ -313,18 +499,26 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 260, ../sass/home.scss */
+  /* line 416, ../sass/home.scss */
   .wrapper .instagram .instagram-image {
     width: 360px;
     height: 360px;
     line-height: 360px;
   }
 }
-/* line 283, ../sass/home.scss */
+@media (min-width: 1025px) {
+  /* line 416, ../sass/home.scss */
+  .wrapper .instagram .instagram-image {
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+  }
+}
+/* line 445, ../sass/home.scss */
 .wrapper .youtube {
   background: #ee5025;
 }
-/* line 286, ../sass/home.scss */
+/* line 448, ../sass/home.scss */
 .wrapper .youtube .youtube-video {
   width: 240px;
   height: 140px;
@@ -334,7 +528,7 @@
   line-height: 140px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 286, ../sass/home.scss */
+  /* line 448, ../sass/home.scss */
   .wrapper .youtube .youtube-video {
     width: 300px;
     height: 200px;
@@ -342,69 +536,24 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 286, ../sass/home.scss */
+  /* line 448, ../sass/home.scss */
   .wrapper .youtube .youtube-video {
     width: 360px;
     height: 260px;
     line-height: 260px;
   }
 }
-/* line 308, ../sass/home.scss */
-.wrapper .contact {
-  background: #282a24;
-}
-/* line 311, ../sass/home.scss */
-.wrapper .contact .contact-section {
-  margin-bottom: 10px;
-}
-/* line 314, ../sass/home.scss */
-.wrapper .contact .contact-section:last-child {
-  margin-bottom: 0;
-}
-@media (min-width: 461px) and (max-width: 767px) {
-  /* line 311, ../sass/home.scss */
-  .wrapper .contact .contact-section {
-    margin-bottom: 15px;
+@media (min-width: 1025px) {
+  /* line 448, ../sass/home.scss */
+  .wrapper .youtube .youtube-video {
+    width: 300px;
+    height: 175px;
+    line-height: 175px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* line 311, ../sass/home.scss */
-  .wrapper .contact .contact-section {
-    margin-bottom: 20px;
+@media (min-width: 1025px) {
+  /* line 476, ../sass/home.scss */
+  .wrapper .contact.non-desktop-version {
+    display: none;
   }
-}
-/* line 327, ../sass/home.scss */
-.wrapper .contact .contact-section-header, .wrapper .contact .contact-snippet {
-  margin-left: 5%;
-  display: block;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: left;
-  padding: 0;
-  border: none;
-  background: none;
-  text-decoration: none;
-  font-weight: normal;
-}
-@media (min-width: 461px) and (max-width: 767px) {
-  /* line 327, ../sass/home.scss */
-  .wrapper .contact .contact-section-header, .wrapper .contact .contact-snippet {
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* line 327, ../sass/home.scss */
-  .wrapper .contact .contact-section-header, .wrapper .contact .contact-snippet {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-/* line 350, ../sass/home.scss */
-.wrapper .contact .contact-section-header {
-  color: #ee5025;
-}
-/* line 354, ../sass/home.scss */
-.wrapper .contact .contact-snippet {
-  color: #eff0d1;
 }

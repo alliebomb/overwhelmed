@@ -5,12 +5,30 @@ $cream:      #EFF0D1;
 
 
 .wrapper {
+    background: #FFF;
+
+    .image-slides-shares-wrapper {
+        @media (min-width : 1025px) {
+            width: 1200px;
+            background: #FFF;
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+
+        .image-and-slides-wrapper {
+            @media (min-width : 1025px) {
+                width: 900px;
+                display: inline-block;
+            }
+        }
+    }
 
     .main-image {
         height: 140px;
         text-align: center;
         line-height: 140px;
         background: #FFF;
+        vertical-align: top;
 
         @media (min-width : 461px) and (max-width : 767px) {
             height: 250px;
@@ -20,6 +38,13 @@ $cream:      #EFF0D1;
         @media (min-width : 768px) and (max-width : 1024px) {
             height: 350px;
             line-height: 350px;
+        }
+
+        @media (min-width : 1025px) {
+            height: 385px;
+            width: inherit;
+            line-height: 385px;
+            background: lightgray;
         }
     }
 
@@ -44,6 +69,13 @@ $cream:      #EFF0D1;
             border-right: 15px solid rgba(0, 0, 0, 0);
             border-bottom: 15px solid $darkgray;
         }
+
+        @media (min-width : 1025px) {
+            margin: -20px auto 0;
+            border-left: 20px solid rgba(0, 0, 0, 0);
+            border-right: 20px solid rgba(0, 0, 0, 0);
+            border-bottom: 20px solid $darkgray;
+        }
     }
 
     .slides-wrapper, .shares-wrapper {
@@ -65,6 +97,10 @@ $cream:      #EFF0D1;
             height: 60px;
         }
 
+        @media (min-width : 1025px) {
+            height: 50px;
+        }
+
         .slide {
             color: $cream;
             margin: 0px 8.5%;
@@ -82,6 +118,12 @@ $cream:      #EFF0D1;
                 line-height: 68px;
                 font-size: 22px;
                 margin: 0 11%;
+            }
+
+            @media (min-width : 1025px) {
+                line-height: 58px;
+                font-size: 18px;
+                margin: 0 12%;
             }
         }
     }
@@ -102,6 +144,13 @@ $cream:      #EFF0D1;
             height: 180px;
         }
 
+        @media (min-width : 1025px) {
+            height: none;
+            background: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+
         .share {
             color: #FFF;
             width: 25%;
@@ -113,6 +162,7 @@ $cream:      #EFF0D1;
             display: inline-block;
             background: $orange;
             text-transform: uppercase;
+            vertical-align: top;
 
             @media (min-width : 461px) and (max-width : 767px) {
                 margin: 30px 3%;
@@ -125,15 +175,36 @@ $cream:      #EFF0D1;
                 font-size: 20px;
                 line-height: 105px;
             }
+
+            @media (min-width : 1025px) {
+                height: 115px;
+                line-height: 125px;
+                width: 280px;
+                display: block;
+                margin: 0 0 20px 15px;
+                text-align: center;
+                font-size: 32px;
+            }
         }
     }
 
     .about-the-book {
         background: $darkgray;
         text-align: center;
+        overflow: hidden;
+
+        @media (min-width : 1025px) {
+            padding-bottom: 0;
+            margin-bottom: 20px;
+            text-align: left;
+        }
 
         .inner-wrapper {
             width: 100%;
+
+            @media (min-width : 1025px) {
+                width: 900px;
+            }
         }
 
         h3 {
@@ -142,6 +213,11 @@ $cream:      #EFF0D1;
 
         .book-and-description {
             margin: 0 auto 6%;
+
+            @media (min-width : 1025px) {
+                margin: 0;
+                height: 360px;
+            }
         }
 
         .book-image {
@@ -164,6 +240,12 @@ $cream:      #EFF0D1;
                 height: 240px;
                 line-height: 240px;
             }
+
+            @media (min-width : 1025px) {
+                width: 380px;
+                height: 480px;
+                line-height: 438px;
+            }
         }
 
         .book-description {
@@ -173,6 +255,41 @@ $cream:      #EFF0D1;
             margin-top: 2%;
             text-align: left;
             display: inline-block;
+        }
+
+        .non-desktop-version {
+            @media (min-width : 1025px) {
+                display: none;
+            }
+        }
+
+        .desktop-version {
+            display: none;
+
+            @media (min-width : 1025px) {
+                width: 44%;
+                margin-left: 80px;
+                display: inline-block;
+            }
+
+            .buy-it-now {
+                @media (min-width : 1025px) {
+                    margin-top: 30px;
+                    margin-bottom: 80px;
+                }
+            }
+        }
+    }
+
+    .twitter-instagram-youtube-wrapper {
+        background: $orange;
+
+        .desktop-inner-wrapper {
+            @media (min-width : 1025px) {
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
         }
     }
 
@@ -202,8 +319,33 @@ $cream:      #EFF0D1;
 
     /* end references */
 
+    .twitter, .instagram, .youtube {
+        vertical-align: top;
+
+        @media (min-width : 1025px) {
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .inner-wrapper {
+            @media (min-width : 1025px) {
+                width: 290px;
+                padding: 0 50px;
+                margin: 0 auto;
+            }
+        }
+
+        h3 {
+            @media (min-width : 1025px) {
+                font-size: 20px;
+                padding: 25px 0 20px;
+            }
+        }
+    }
+
     .twitter {
         background: $orange;
+        text-align: left;
 
         .tweet {
             font-size: 11px;
@@ -221,6 +363,12 @@ $cream:      #EFF0D1;
                 line-height: 20px;
                 margin-bottom: 15px;
             }
+
+            @media (min-width : 1025px) {
+                font-size: 13px;
+                line-height: 14px;
+                margin-bottom: 0;
+            }
         }
 
         .handle, .time-stamp {
@@ -233,6 +381,10 @@ $cream:      #EFF0D1;
             }
 
             @media (min-width : 768px) and (max-width : 1024px) {
+                font-size: 14px;
+            }
+
+            @media (min-width : 1025px) {
                 font-size: 14px;
             }
         }
@@ -257,6 +409,10 @@ $cream:      #EFF0D1;
     .instagram {
         background: $darkgray;
 
+        @media (min-width : 1025px) {
+            background: $orange;
+        }
+
         .instagram-image {
             width: 240px;
             height: 240px;
@@ -275,6 +431,12 @@ $cream:      #EFF0D1;
                 width: 360px;
                 height: 360px;
                 line-height: 360px; 
+            }
+
+            @media (min-width : 1025px) {
+                width: 300px;
+                height: 300px;
+                line-height: 300px;
             }
         }
 
@@ -302,57 +464,19 @@ $cream:      #EFF0D1;
                 height: 260px;
                 line-height: 260px; 
             }
+
+            @media (min-width : 1025px) {
+                width: 300px;
+                height: 175px;
+                line-height: 175px;
+            }
         }
     }
 
-    .contact {
-        background: $darkgray;
-
-        .contact-section {
-            margin-bottom: 10px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            @media (min-width : 461px) and (max-width : 767px) {
-                margin-bottom: 15px;
-            }
-
-            @media (min-width : 768px) and (max-width : 1024px) {
-                margin-bottom: 20px;
-            }
-        }
-
-        .contact-section-header, .contact-snippet {
-            margin-left: 5%;
-            display: block;
-            font-size: 12px;
-            line-height: 16px;
-            text-align: left;
-            padding: 0;
-            border: none;
-            background: none;
-            text-decoration: none;
-            font-weight: normal;
-
-            @media (min-width : 461px) and (max-width : 767px) {
-                font-size: 14px;
-                line-height: 18px;
-            }
-
-            @media (min-width : 768px) and (max-width : 1024px) {
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
-
-        .contact-section-header {
-            color: $orange;
-        }
-
-        .contact-snippet {
-            color: $cream;
-        }
+    .contact.non-desktop-version {
+        @media (min-width : 1025px) {
+            display: none;
+        }  
     }
+
 }
