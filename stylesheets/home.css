@@ -260,14 +260,26 @@
 .wrapper .about-the-book .book-and-description {
   margin: 0 auto 6%;
 }
+@media (min-width: 461px) and (max-width: 767px) {
+  /* line 221, ../sass/home.scss */
+  .wrapper .about-the-book .book-and-description {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 221, ../sass/home.scss */
+  .wrapper .about-the-book .book-and-description {
+    margin: 0 auto 30px;
+  }
+}
 @media (min-width: 1025px) {
   /* line 221, ../sass/home.scss */
   .wrapper .about-the-book .book-and-description {
-    margin: 0;
+    margin: 0 auto;
     height: 360px;
   }
 }
-/* line 230, ../sass/home.scss */
+/* line 238, ../sass/home.scss */
 .wrapper .about-the-book .book-image {
   width: 80px;
   height: 140px;
@@ -278,7 +290,7 @@
   vertical-align: top;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 230, ../sass/home.scss */
+  /* line 238, ../sass/home.scss */
   .wrapper .about-the-book .book-image {
     width: 120px;
     height: 200px;
@@ -286,22 +298,22 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 230, ../sass/home.scss */
+  /* line 238, ../sass/home.scss */
   .wrapper .about-the-book .book-image {
-    width: 160px;
-    height: 240px;
-    line-height: 240px;
+    width: 220px;
+    height: 300px;
+    line-height: 300px;
   }
 }
 @media (min-width: 1025px) {
-  /* line 230, ../sass/home.scss */
+  /* line 238, ../sass/home.scss */
   .wrapper .about-the-book .book-image {
     width: 380px;
     height: 480px;
     line-height: 438px;
   }
 }
-/* line 258, ../sass/home.scss */
+/* line 266, ../sass/home.scss */
 .wrapper .about-the-book .book-description {
   color: #eff0d1;
   width: 55%;
@@ -310,49 +322,81 @@
   text-align: left;
   display: inline-block;
 }
-@media (min-width: 1025px) {
-  /* line 267, ../sass/home.scss */
+@media (min-width: 461px) {
+  /* line 275, ../sass/home.scss */
   .wrapper .about-the-book .non-desktop-version {
     display: none;
   }
 }
-/* line 273, ../sass/home.scss */
+/* line 282, ../sass/home.scss */
 .wrapper .about-the-book .desktop-version {
   display: none;
 }
+@media (min-width: 461px) and (max-width: 767px) {
+  /* line 282, ../sass/home.scss */
+  .wrapper .about-the-book .desktop-version {
+    width: 44%;
+    margin-left: 40px;
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 282, ../sass/home.scss */
+  .wrapper .about-the-book .desktop-version {
+    width: 44%;
+    margin-left: 60px;
+    display: inline-block;
+  }
+}
 @media (min-width: 1025px) {
-  /* line 273, ../sass/home.scss */
+  /* line 282, ../sass/home.scss */
   .wrapper .about-the-book .desktop-version {
     width: 44%;
     margin-left: 80px;
     display: inline-block;
   }
 }
+@media (min-width: 461px) and (max-width: 767px) {
+  /* line 303, ../sass/home.scss */
+  .wrapper .about-the-book .desktop-version .buy-it-now {
+    width: 120px;
+    margin-top: 30px;
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 303, ../sass/home.scss */
+  .wrapper .about-the-book .desktop-version .buy-it-now {
+    width: 150px;
+    margin-top: 40px;
+    display: block;
+  }
+}
 @media (min-width: 1025px) {
-  /* line 282, ../sass/home.scss */
+  /* line 303, ../sass/home.scss */
   .wrapper .about-the-book .desktop-version .buy-it-now {
     margin-top: 30px;
     margin-bottom: 80px;
   }
 }
-/* line 291, ../sass/home.scss */
+/* line 325, ../sass/home.scss */
 .wrapper .twitter-instagram-youtube-wrapper {
   background: #ee5025;
 }
 @media (min-width: 1025px) {
-  /* line 294, ../sass/home.scss */
+  /* line 328, ../sass/home.scss */
   .wrapper .twitter-instagram-youtube-wrapper .desktop-inner-wrapper {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
   }
 }
-/* line 305, ../sass/home.scss */
+/* line 339, ../sass/home.scss */
 .wrapper .youtube-reference, .wrapper .instagram-reference, .wrapper .contact-wrapper {
   display: block;
   text-align: center;
 }
-/* line 309, ../sass/home.scss */
+/* line 343, ../sass/home.scss */
 .wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
   color: #eff0d1;
   font-size: 10px;
@@ -360,32 +404,32 @@
   display: inline-block;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 309, ../sass/home.scss */
+  /* line 343, ../sass/home.scss */
   .wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
     font-size: 12px;
     line-height: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 309, ../sass/home.scss */
+  /* line 343, ../sass/home.scss */
   .wrapper .youtube-reference .handle, .wrapper .youtube-reference .time-stamp, .wrapper .instagram-reference .handle, .wrapper .instagram-reference .time-stamp, .wrapper .contact-wrapper .handle, .wrapper .contact-wrapper .time-stamp {
     font-size: 14px;
     line-height: 16px;
   }
 }
-/* line 329, ../sass/home.scss */
+/* line 363, ../sass/home.scss */
 .wrapper .twitter, .wrapper .instagram, .wrapper .youtube {
   vertical-align: top;
 }
 @media (min-width: 1025px) {
-  /* line 329, ../sass/home.scss */
+  /* line 363, ../sass/home.scss */
   .wrapper .twitter, .wrapper .instagram, .wrapper .youtube {
     display: inline-block;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 1025px) {
-  /* line 337, ../sass/home.scss */
+  /* line 371, ../sass/home.scss */
   .wrapper .twitter .inner-wrapper, .wrapper .instagram .inner-wrapper, .wrapper .youtube .inner-wrapper {
     width: 290px;
     padding: 0 50px;
@@ -393,25 +437,25 @@
   }
 }
 @media (min-width: 1025px) {
-  /* line 345, ../sass/home.scss */
+  /* line 379, ../sass/home.scss */
   .wrapper .twitter h3, .wrapper .instagram h3, .wrapper .youtube h3 {
     font-size: 20px;
     padding: 25px 0 20px;
   }
 }
-/* line 353, ../sass/home.scss */
+/* line 387, ../sass/home.scss */
 .wrapper .twitter {
   background: #ee5025;
   text-align: left;
 }
-/* line 357, ../sass/home.scss */
+/* line 391, ../sass/home.scss */
 .wrapper .twitter .tweet {
   font-size: 11px;
   line-height: 16px;
   margin-bottom: 5px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 357, ../sass/home.scss */
+  /* line 391, ../sass/home.scss */
   .wrapper .twitter .tweet {
     font-size: 13px;
     line-height: 18px;
@@ -419,7 +463,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 357, ../sass/home.scss */
+  /* line 391, ../sass/home.scss */
   .wrapper .twitter .tweet {
     font-size: 15px;
     line-height: 20px;
@@ -427,68 +471,68 @@
   }
 }
 @media (min-width: 1025px) {
-  /* line 357, ../sass/home.scss */
+  /* line 391, ../sass/home.scss */
   .wrapper .twitter .tweet {
     font-size: 13px;
     line-height: 14px;
     margin-bottom: 0;
   }
 }
-/* line 381, ../sass/home.scss */
+/* line 415, ../sass/home.scss */
 .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
   color: #eff0d1;
   font-size: 10px;
   display: inline-block;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 381, ../sass/home.scss */
+  /* line 415, ../sass/home.scss */
   .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
     font-size: 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 381, ../sass/home.scss */
+  /* line 415, ../sass/home.scss */
   .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
     font-size: 14px;
   }
 }
 @media (min-width: 1025px) {
-  /* line 381, ../sass/home.scss */
+  /* line 415, ../sass/home.scss */
   .wrapper .twitter .handle, .wrapper .twitter .time-stamp {
     font-size: 14px;
   }
 }
-/* line 399, ../sass/home.scss */
+/* line 433, ../sass/home.scss */
 .wrapper .twitter .time-stamp {
   margin-bottom: 15px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 399, ../sass/home.scss */
+  /* line 433, ../sass/home.scss */
   .wrapper .twitter .time-stamp {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 399, ../sass/home.scss */
+  /* line 433, ../sass/home.scss */
   .wrapper .twitter .time-stamp {
     margin-bottom: 25px;
   }
 }
-/* line 410, ../sass/home.scss */
+/* line 444, ../sass/home.scss */
 .wrapper .twitter .time-stamp:last-child {
   margin-bottom: 0;
 }
-/* line 416, ../sass/home.scss */
+/* line 450, ../sass/home.scss */
 .wrapper .instagram {
   background: #282a24;
 }
 @media (min-width: 1025px) {
-  /* line 416, ../sass/home.scss */
+  /* line 450, ../sass/home.scss */
   .wrapper .instagram {
     background: #ee5025;
   }
 }
-/* line 423, ../sass/home.scss */
+/* line 457, ../sass/home.scss */
 .wrapper .instagram .instagram-image {
   width: 240px;
   height: 240px;
@@ -498,7 +542,7 @@
   line-height: 240px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 423, ../sass/home.scss */
+  /* line 457, ../sass/home.scss */
   .wrapper .instagram .instagram-image {
     width: 300px;
     height: 300px;
@@ -506,7 +550,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 423, ../sass/home.scss */
+  /* line 457, ../sass/home.scss */
   .wrapper .instagram .instagram-image {
     width: 360px;
     height: 360px;
@@ -514,18 +558,18 @@
   }
 }
 @media (min-width: 1025px) {
-  /* line 423, ../sass/home.scss */
+  /* line 457, ../sass/home.scss */
   .wrapper .instagram .instagram-image {
     width: 300px;
     height: 300px;
     line-height: 300px;
   }
 }
-/* line 452, ../sass/home.scss */
+/* line 486, ../sass/home.scss */
 .wrapper .youtube {
   background: #ee5025;
 }
-/* line 455, ../sass/home.scss */
+/* line 489, ../sass/home.scss */
 .wrapper .youtube .youtube-video {
   width: 240px;
   height: 140px;
@@ -535,7 +579,7 @@
   line-height: 140px;
 }
 @media (min-width: 461px) and (max-width: 767px) {
-  /* line 455, ../sass/home.scss */
+  /* line 489, ../sass/home.scss */
   .wrapper .youtube .youtube-video {
     width: 300px;
     height: 200px;
@@ -543,7 +587,7 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 455, ../sass/home.scss */
+  /* line 489, ../sass/home.scss */
   .wrapper .youtube .youtube-video {
     width: 360px;
     height: 260px;
@@ -551,7 +595,7 @@
   }
 }
 @media (min-width: 1025px) {
-  /* line 455, ../sass/home.scss */
+  /* line 489, ../sass/home.scss */
   .wrapper .youtube .youtube-video {
     width: 300px;
     height: 175px;
@@ -559,7 +603,7 @@
   }
 }
 @media (min-width: 1025px) {
-  /* line 483, ../sass/home.scss */
+  /* line 517, ../sass/home.scss */
   .wrapper .contact.non-desktop-version {
     display: none;
   }
