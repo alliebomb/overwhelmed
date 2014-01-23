@@ -24,14 +24,15 @@ $cream:      #EFF0D1;
 
 .wrapper {
 	background: $darkgray;
-	// background: #FFF;
 
 	.get-overwhelmed-curriculum {
 		background: $cream;
+		overflow: hidden;
 	}
 
 	.max-width-wrapper {
-		background: #FFF;
+		// background: #FFF;
+		position: relative;
 
 		@media (min-width : 1025px) {
 			width: 1200px;
@@ -41,6 +42,24 @@ $cream:      #EFF0D1;
 		.product-separator {
 			@media (min-width : 1025px) {
 				display: none;
+	        }
+		}
+
+		.vertical {
+			@media (min-width : 1025px) {
+				width: 5px;
+				height: 635px;
+				background: rgb(255, 255, 255);
+				display: inline-block;
+				vertical-align: top;
+	        }
+		}
+
+		.absolute-right {
+			@media (min-width : 1025px) {
+				position: absolute;
+				right: 0;
+				top: 0;
 	        }
 		}
 	}
@@ -53,7 +72,6 @@ $cream:      #EFF0D1;
 		@media (min-width : 1025px) {
 			width: 597.5px;
 			display: inline-block;
-			margin-bottom: -2px;
         }
 
 		.product-wrapper {
